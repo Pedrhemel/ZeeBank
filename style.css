@@ -1,0 +1,951 @@
+
+/*======================================================
+RESET
+======================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    overflow-x:hidden;
+}
+
+body{
+    font-family:Georgia,"Times New Roman",serif;
+    overflow-x:hidden;
+    background:#fff;
+    color:#111;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+/*======================================================
+SKIP LINK
+======================================================*/
+
+.skip-link{
+    position:absolute;
+    left:-9999px;
+}
+
+.skip-link:focus{
+    left:20px;
+    top:20px;
+    background:#0879f0;
+    color:#fff;
+    padding:12px 18px;
+    border-radius:8px;
+    z-index:9999;
+}
+
+/*======================================================
+HEADER
+======================================================*/
+
+.header{
+    width:100%;
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.header nav{
+    width:min(1280px,92%);
+    margin:auto;
+    min-height:90px;
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    width:180px;
+}
+
+.logo-link{
+    display:flex;
+    align-items:center;
+}
+
+.ul-nav{
+    display:flex;
+    gap:50px;
+    margin-left:auto;
+    align-items:center;
+}
+
+.ul-nav a{
+    color:#0f2e59;
+    font-size:18px;
+    transition:.3s;
+}
+
+.ul-nav a:hover{
+    color:#0879f0;
+}
+
+.botao-nav{
+    margin-left:35px;
+    background:#0879f0;
+    color:#fff;
+    padding:15px 32px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.botao-nav:hover{
+    background:#0b66c8;
+}
+
+.menu-hamburguer{
+    display:none;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+/*======================================================
+SEÇÃO 1
+======================================================*/
+
+.secao-1{
+    min-height:680px;
+    background-image:url("img/imagem banco.webp");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    padding:80px 7%;
+}
+
+.hero-conteudo{
+    max-width:650px;
+    margin-left:auto;
+}
+
+.secao-1 h1{
+    font-size:clamp(42px,5vw,72px);
+    line-height:1.08;
+    color:#111;
+}
+
+.h2-1{
+    margin:35px 0 45px;
+    font-size:clamp(18px,2vw,27px);
+    line-height:1.6;
+    color:#2d2d2d;
+}
+
+.botao-1{
+    display:inline-block;
+    padding:18px 42px;
+    background:#0879f0;
+    color:#fff;
+    border-radius:18px;
+    font-size:22px;
+    transition:.3s;
+}
+
+.botao-1:hover{
+    background:#0b66c8;
+}
+
+.segurança{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:70px;
+    color:#fff;
+}
+
+.segurança img{
+    width:40px;
+}
+
+.segurança p{
+    font-size:18px;
+}
+
+
+/*========================
+SEÇÃO 2
+========================*/
+
+.secao-2{
+    background:#bed8ff;
+    padding:70px 6%;
+}
+
+.mini-esc{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    padding:12px 25px;
+    background:#7fb1ff;
+    border-radius:50px;
+    margin-bottom:50px;
+}
+
+.grid-secao2{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:70px;
+    align-items:center;
+}
+
+.texto-sec2 h2{
+    font-size:64px;
+    color:#0879f0;
+    line-height:1.1;
+    margin-bottom:35px;
+}
+
+.texto-sec2>p{
+    font-size:24px;
+    line-height:1.7;
+    color:#14345d;
+    margin-bottom:30px;
+}
+
+.certo{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    margin-top:40px;
+}
+
+.certo img{
+    width:55px;
+    flex-shrink:0;
+}
+
+.certo p{
+    font-size:24px;
+    line-height:1.6;
+}
+
+.lado-direito-sec2{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.celular-virus{
+    width:320px;
+    margin-bottom:40px;
+}
+
+.cards-info{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    width:100%;
+}
+
+.info-card{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:#fff;
+    border-radius:24px;
+    padding:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.info-card img{
+    width:55px;
+    flex-shrink:0;
+}
+
+.info-card h3{
+    color:#0879f0;
+    font-size:22px;
+    margin-bottom:6px;
+}
+
+.info-card p{
+    font-size:18px;
+    color:#333;
+}
+
+.tudod2{
+    margin-top:80px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.divs2{
+    background:#fff;
+    border-radius:25px;
+    padding:25px;
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+}
+
+.divs2 img{
+    width:55px;
+}
+
+.textd2 h3{
+    color:#0879f0;
+    margin-bottom:12px;
+    font-size:22px;
+}
+
+.textd2 p{
+    line-height:1.6;
+    color:#333;
+}
+
+@media(max-width:900px){
+
+    .grid-secao2{
+        grid-template-columns:1fr;
+    }
+
+    .texto-sec2{
+        text-align:center;
+    }
+
+    .certo{
+        justify-content:center;
+    }
+
+    .celular-virus{
+        width:260px;
+    }
+
+    .tudod2{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/*======================================================
+SEÇÃO 3
+======================================================*/
+
+.secao-3{
+    background:#0879f0;
+    padding:80px 6%;
+}
+
+.secao-3>h2{
+    text-align:center;
+    color:#fff;
+    font-size:clamp(42px,5vw,65px);
+    margin-bottom:60px;
+}
+
+.container-sec3{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.card-esquerda,
+.card-direita{
+    background:#fff;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.texto-esquerda,
+.card-direita{
+    padding:35px;
+}
+
+.texto-esquerda h3,
+.card-direita h3{
+    color:#0879f0;
+    font-size:38px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.texto-esquerda p,
+.card-direita p{
+    color:#333;
+    font-size:21px;
+    line-height:1.7;
+}
+
+.card-esquerda img{
+    width:100%;
+}
+
+.lado-direito{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+}
+
+.homem{
+    width:320px;
+}
+
+.segurança1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-top:60px;
+    color:#fff;
+}
+
+.segurança1 img{
+    width:30px;
+}
+
+.segurança1 p{
+    font-size:18px;
+}
+
+/*======================================================
+SEÇÃO 4
+======================================================*/
+
+.secao-4{
+    position:relative;
+    min-height:760px;
+    padding:80px 6%;
+    background:#fff;
+}
+
+.texts-4{
+    max-width:650px;
+}
+
+.texts-4 h2{
+    font-size:clamp(42px,5vw,65px);
+    margin-bottom:35px;
+}
+
+.texts-4 span{
+    color:#0879f0;
+}
+
+.hs4{
+    border:2px solid #dcdcdc;
+    border-radius:0 30px 30px 0;
+    padding:35px;
+}
+
+.hs4 article+article{
+    margin-top:35px;
+}
+
+.hs4 h3{
+    color:#0879f0;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.hs4 p{
+    font-size:20px;
+    color:#333;
+    line-height:1.7;
+}
+
+.hs4 strong{
+    color:#0f2e59;
+}
+
+.senhorzinho{
+    position:absolute;
+    top:70px;
+    right:0;
+    width:430px;
+}
+
+.senhorzinho>img{
+    width:100%;
+}
+
+.senhorzinho-balao{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:#0879f0;
+    color:#fff;
+    padding:18px;
+    border-radius:25px 0 0 25px;
+}
+
+.senhorzinho-balao img{
+    width:60px;
+}
+
+.senhorzinho-text h3{
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.senhorzinho-text p{
+    font-size:17px;
+    line-height:1.5;
+}
+
+.seguranca-azul{
+    position:absolute;
+    left:50%;
+    bottom:30px;
+    transform:translateX(-50%);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#0f2e59;
+}
+
+.seguranca-azul img{
+    width:30px;
+}
+
+/*======================================================
+SEÇÃO 5
+======================================================*/
+
+.secao-5{
+    padding:80px 6%;
+    background-image:url("img/dinheiro fundo.webp");
+    background-size:cover;
+    background-position:center;
+}
+
+.secao-5 h2{
+    text-align:center;
+    font-size:clamp(40px,5vw,62px);
+    margin-bottom:60px;
+}
+
+.secao-5 span{
+    color:#0879f0;
+}
+
+.tudo-5{
+    max-width:900px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.div-de-2-1-5,
+.div-de-2-2-5{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.passos,
+.passo5{
+    background:#0879f0;
+    color:#fff;
+    border-radius:25px;
+    padding:28px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+.passos h3,
+.passo5 h3{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.passos p,
+.passo5 p{
+    font-size:19px;
+    line-height:1.6;
+}
+
+.passo5{
+    max-width:420px;
+    margin:35px auto 0;
+}
+
+/*======================================================
+SEÇÃO 6
+======================================================*/
+
+.secao-6{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:90px 7%;
+    background:#0879f0;
+    overflow:hidden;
+}
+
+.fundo-cancelado{
+    position:absolute;
+    left:5%;
+    top:30px;
+    width:600px;
+    opacity:.08;
+    pointer-events:none;
+}
+
+.texto-6{
+    position:relative;
+    z-index:2;
+    max-width:650px;
+}
+
+.texto-6 h2{
+    color:#fff;
+    font-size:clamp(42px,5vw,65px);
+    margin-bottom:40px;
+}
+
+.texto-6 span{
+    color:#FFD54F;
+}
+
+.lista-dicas{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.dica{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.dica img{
+    width:28px;
+}
+
+.dica p{
+    color:#fff;
+    font-size:20px;
+    line-height:1.5;
+}
+
+.celular{
+    width:340px;
+    transform:rotate(-10deg);
+    position:relative;
+    z-index:2;
+}
+
+/*======================================================
+SEÇÃO 7
+======================================================*/
+
+.secao-7{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+    padding:90px 7%;
+    background:#0879f0;
+}
+
+.texto7{
+    flex:1;
+}
+
+.texto7 h2{
+    color:#fff;
+    font-size:clamp(42px,5vw,65px);
+}
+
+.texto7 span{
+    color:#FFD54F;
+}
+
+.texto7>p{
+    color:#fff;
+    font-size:22px;
+    line-height:1.7;
+    margin:35px 0;
+}
+
+.lista7{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.lista7 p{
+    color:#fff;
+    font-size:21px;
+    border-left:5px solid #fff;
+    padding-left:18px;
+}
+
+.seguranca7{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:45px;
+    color:#fff;
+}
+
+.seguranca7 img{
+    width:28px;
+}
+
+.imagem7{
+    width:420px;
+}
+
+/*======================================================
+SEÇÃO 8
+======================================================*/
+
+.secao-8{
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+    padding:90px 7%;
+    min-height:700px;
+}
+
+.secao-8 h2{
+    position:relative;
+    z-index:2;
+    font-size:clamp(42px,5vw,65px);
+}
+
+.secao-8 span{
+    color:#0879f0;
+}
+
+.secao-8 h2 img{
+    display:inline-block;
+    width:35px;
+    margin-left:8px;
+}
+
+.secao-8>p{
+    font-size:22px;
+    color:#555;
+    margin:30px auto 55px;
+    max-width:650px;
+}
+
+.botao8{
+    display:inline-block;
+    background:#17376d;
+    color:#fff;
+    padding:18px 42px;
+    border-radius:18px;
+    font-size:20px;
+    transition:.3s;
+}
+
+.botao8:hover{
+    background:#0f2e59;
+}
+
+.mulher8{
+    position:absolute;
+    left:8%;
+    bottom:20px;
+    width:300px;
+}
+
+.escudo8{
+    position:absolute;
+    left:50%;
+    top:80px;
+    transform:translateX(-50%);
+    width:400px;
+    opacity:.15;
+}
+
+.seguranca8{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-top:60px;
+    color:#0879f0;
+}
+
+.seguranca8 img{
+    width:30px;
+}
+
+/*======================================================
+FOOTER
+======================================================*/
+
+.footer{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:50px;
+    padding:60px 7%;
+    background:#0879f0;
+    color:#fff;
+}
+
+.footer-logo img{
+    width:180px;
+    margin-bottom:20px;
+}
+
+.footer p{
+    line-height:1.7;
+}
+
+.footer-links h2,
+.footer-aviso h2{
+    margin-bottom:18px;
+    font-size:22px;
+}
+
+.footer-links ul{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.footer-links a{
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#FFD54F;
+}
+
+/*======================================================
+RESPONSIVIDADE
+======================================================*/
+
+@media(max-width:992px){
+
+    .container-sec3,
+    .secao-7{
+        grid-template-columns:1fr;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .tudod2{
+        grid-template-columns:1fr;
+    }
+
+    .tudo-5{
+        grid-template-columns:1fr;
+    }
+
+    .senhorzinho,
+    .parte1,
+    .parte2,
+    .parte3{
+        position:static;
+        margin:30px auto;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .menu-hamburguer{
+        display:block;
+        margin-left:20px;
+    }
+
+    .ul-nav{
+        display:none;
+        position:absolute;
+        top:90px;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        padding:25px 0;
+        box-shadow:0 5px 15px rgba(0,0,0,.15);
+    }
+
+    .ul-nav.ativo{
+        display:flex;
+    }
+
+    .hero-conteudo{
+        margin:auto;
+        text-align:center;
+    }
+
+    .secao-6,
+    .secao-7{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .celular,
+    .imagem7,
+    .mulher8{
+        position:static;
+        transform:none;
+        margin:auto;
+        width:260px;
+    }
+
+    .escudo8{
+        width:250px;
+    }
+
+    .footer{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .footer-links ul{
+        align-items:center;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .secao-1 h1,
+    .texts-2 h2,
+    .secao-3 h2,
+    .secao-4 h2,
+    .texto-6 h2,
+    .texto7 h2,
+    .secao-8 h2{
+        font-size:34px;
+    }
+
+    .botao-1,
+    .botao8{
+        width:100%;
+        text-align:center;
+    }
+
+}
